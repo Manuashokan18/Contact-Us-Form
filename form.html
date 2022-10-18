@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Form page</title>
+            <link rel="stylesheet" href="/css/bootstrap.css" />
+            <link rel="stylesheet" href="/style.css   " />
+            <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+      </head>
+      <body>
+            <form name="form1">
+                  <div class="form-group row">
+                        <h1 id="form-heading">Contact-us</h1>
+
+                        <div class="input-group">
+                              <label for="staticName" class="col-sm-2 col-form-label">Name :</label>
+                              <input
+                                    type="text"
+                                    id="contact-name"
+                                    class="form-control-plaintext"
+                                    placeholder="Enter your name"
+                                    onkeyup="validateName()"
+                              />
+                              <span id="name-error"> </span>
+                        </div>
+
+                        <div class="input-group">
+                              <label for="staticAge" class="col-sm-2 col-form-label">Age :</label>
+                              <input
+                                    type="number"
+                                    class="form-control-plaintext"
+                                    placeholder="Enter your age"
+                                    id="contact-age"
+                                    onkeyup="validateAge()"
+                              />
+                              <span id="age-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                              <label for="staticEmail" class="col-sm-2 col-form-label">Email :</label>
+                              <input
+                                    type="email"
+                                    class="form-control-plaintext"
+                                    placeholder="Enter your email-id"
+                                    id="contact-email"
+                                    onkeyup="validateEmail()"
+                              />
+                              <span id="email-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                              <label for="staticNumber" class="col-sm-2 col-form-label">Mobile Number :</label>
+                              <input
+                                    type="tel"
+                                    class="form-control-plaintext"
+                                    placeholder="Enter your Mobile number"
+                                    id="contact-number"
+                                    onkeyup="validateNumber()"
+                              />
+                              <span id="number-error"></span>
+                        </div>
+
+                        <div class="input-group">
+                              <label for="staticComments" class="col-sm-2 col-form-label"> Comments :</label>
+
+                              <textarea
+                                    cols="25"
+                                    rows="4"
+                                    placeholder="Enter your Comments"
+                                    id="contact-message"
+                                    onkeyup="validateMessage()"
+                              ></textarea>
+                              <span id="message-error"> </span>
+                        </div>
+
+                        <div class="btn-div">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                              <a href="/index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+                              <button type="button" class="btn btn-danger">Cancel</button>
+                              <span id="submit-error"> </span>
+                        </div>
+                  </div>
+            </form>
+
+            <script src="/script.js"></script>
+            <script src="/js/bootstrap.js"></script>
+      </body>
+</html>

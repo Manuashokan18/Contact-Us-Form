@@ -1,0 +1,101 @@
+body {
+    /* background-image: url(images/background.jpg); */
+    background-size: cover;
+    margin: 0;
+}
+.index-body{
+    background-image: url("/images/background.jpg");
+}
+.nav {
+   justify-content: center;
+}
+.nav .nav-item .nav-link{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(6, 75, 6);
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#overlay {
+    margin-left: 900px;
+    margin-top: 90px;
+}
+
+#form {
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    
+}
+#contact-h1{
+    margin: 50px;
+    text-align: center;
+    font-size: 55px;
+    color: aliceblue;
+}
+label{
+    display: block;
+    margin: 20px 0;
+    
+}
+.form {
+    color: aliceblue;
+    
+    
+}
+/* #overlay form input {
+    padding-left: 90px;
+    padding-top: 20px;
+    flex: 1;
+
+} */
+#overlay form  textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    
+}
+#name,#age,#email,#number,#message{
+    box-sizing: border-box;
+    outline: none;
+    outline: none;
+    border: none;
+    
+}
+
+/* formpage */
+#contact-message{
+    resize: none;
+    border: none;
+    padding-top: 30px;
+   
+}
+.form-group {
+    margin:0 0px  0px 500px;
+}
+ #form-heading {
+    padding: 0 0 20px 55px;
+} 
+.btn-primary,.btn-secondary,.btn-danger{
+    width: 103px;
+}
+.btn-div {
+    padding: 18px 0 0 30px;
+}  
+.input-group span{
+    position: absolute;
+    top :5.5rem;
+    font-size: 11px;
+    color: red;
+}
+#submit-error{
+    color: red;
+}
