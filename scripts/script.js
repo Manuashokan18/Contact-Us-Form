@@ -3,18 +3,41 @@ const ageError = document.getElementById('age-error');
 const emailError = document.getElementById('email-error');
 const numberError = document.getElementById('number-error');
 const messageError = document.getElementById('message-error');
-//normal function
-// function validateName() {
-//     !document.getElementById('contact-name').value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/) ? nameError.innerHTML = 'Write the full name': nameError.innerHTML = 'Valid';
-// }
 
+// normal function
+function validateName() {
+    var name = document.getElementById('contact-name');
+    if(!name.value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+        nameError.innerHTML = 'Write the full name';
+        nameError.style.color = 'red';
+    }
+    else{
+         nameError.innerHTML = 'Looks good';
+        nameError.style.color = 'green';
+        setTimeout(function() {
+            nameError.style.display = 'none';
+        },1000)
+
+        }
+}
 //arrow function
-const validateName = () => (!document.getElementById('contact-name').value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/) ? nameError.innerHTML = 'Write the full name': nameError.innerHTML = '');
+// const validateName = () => (!document.getElementById('contact-name').value.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/) ? nameError.innerHTML = 'Write the full name': nameError.innerHTML = 'Looks good!');
 
 
 function validateAge() {
     var myage = document.getElementById('contact-age').value;
-    !myage.match(/^[0-9]{1,2}$/) ? ageError.innerHTML = 'Age not valid':  ageError.innerHTML = '';
+    if(!myage.match(/^[0-9]{1,2}$/)) {
+         ageError.innerHTML = 'Age not valid';
+         nameError.style.color = 'red';
+
+     }
+     else{
+        nameError.innerHTML = 'Looks good';
+        nameError.style.color = 'green';
+        setTimeout(function() {
+            nameError.style.display = 'none';
+        },5000)
+     } 
 }
 
 function validateEmail(){

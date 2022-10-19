@@ -6,11 +6,123 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Form page</title>
             <link rel="stylesheet" href="/css/bootstrap.css" />
-            <link rel="stylesheet" href="/styles/style.css  " />
-            <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
       </head>
       <body>
-            <form name="form1">
+            <header>
+                  <!-- Navbar -->
+                  <nav class="navbar navbar-expand-lg bg-light border-bottom border-info">
+                        <div class="container-fluid">
+                              <a class="navbar-brand text-info" href="#">
+                                    <img
+                                          src="images/default.png"
+                                          alt="Logo"
+                                          width="50"
+                                          height="50"
+                                          class="d-inline-block align-text-center"
+                                    />
+                                    Validation Page
+                              </a>
+                              <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav"
+                                    aria-controls="navbarNav"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation"
+                              >
+                                    <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ms-auto">
+                                          <li class="nav-item">
+                                                <a class="nav-link text-info fw-bold" aria-current="page" href="index.html"
+                                                      >Home</a
+                                                >
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </nav>
+                  <!-- Navbar -->
+
+                  <!-- form -->
+                  <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4 col-lg-6">
+                              <label for="validationCustom01" class="form-label ms-1">First Name</label>
+                              <input type="text" class="form-control" id="contact-name" onkeyup="validateName()" />
+                              <!-- <span class="col-lg-6 mx-auto" id="name-error"></span> -->
+                              <div id="name-error"></div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-6">
+                              <label for="validationCustom02" class="form-label ms-1">Age</label>
+                              <input type="number" class="form-control" id="contact-age" onkeyup="validateAge()" />
+                              <!-- <span class="col-lg-6 mx-auto" id="age-error"></span> -->
+                              <div id="age-error"></div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-6">
+                              <label for="validationCustomUsername" class="form-label ms-1">Email</label>
+                              <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="email" class="form-control" id="contact-email" onkeyup="validateEmail()" />
+                                    <div class="invalid-feedback">Please choose a username.</div>
+                                    <div id="email-error"></div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <label for="validationCustom03" class="form-label ms-1">Mobile Number</label>
+                              <input type="number" class="form-control" id="validationCustom03" required />
+                              <div class="invalid-feedback">Please provide a valid city.</div>
+                        </div>
+
+                        <div class="mb-3 col-lg-12">
+                              <label for="validationTextarea" class="form-label ms-1">Textarea</label>
+                              <textarea
+                                    class="form-control"
+                                    id="validationTextarea"
+                                    placeholder="Required example textarea"
+                                    required
+                              ></textarea>
+                              <div class="invalid-feedback">Please enter a comment.</div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                              <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                                    <label class="form-check-label" for="invalidCheck">
+                                          Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">You must agree before submitting.</div>
+                              </div>
+                        </div>
+                        <div class="col-12 mt-5 text-center">
+                              <button class="btn btn-primary" type="submit">Submit</button>
+                              <a href="/index.html"><button type="button" class="btn btn-secondary">Home</button></a>
+                              <button type="button" class="btn btn-danger">Cancel</button>
+                              <span id="submit-error"> </span>
+                        </div>
+                  </form>
+                  <!-- form -->
+            </header>
+
+            <!-- Footer -->
+            <div class="container col-12">
+                  <footer class="py-3 my-4">
+                        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                        </ul>
+                        <p class="text-center text-muted">© 2021 Company, Inc</p>
+                  </footer>
+            </div>
+            <!-- Footer -->
+
+            <!-- <form name="form1">
                   <div class="form-group row">
                         <h1 id="form-heading">Contact us</h1>
 
@@ -82,9 +194,9 @@
                               <span id="submit-error"> </span>
                         </div>
                   </div>
-            </form>
+            </form> -->
 
             <script src="scripts/script.js"></script>
-            <script src="/js/bootstrap.js"></script>
+            <script src="js/bootstrap.js"></script>
       </body>
 </html>
