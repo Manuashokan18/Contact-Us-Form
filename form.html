@@ -7,7 +7,7 @@
             <title>Form page</title>
             <link rel="stylesheet" href="/css/bootstrap.css" />
       </head>
-      <body>
+      <body background="/images/1.jpg">
             <header>
                   <!-- Navbar -->
                   <nav class="navbar navbar-expand-lg bg-light border-bottom border-info">
@@ -47,13 +47,19 @@
                   <!-- Navbar -->
 
                   <!-- form -->
-                  <form class="row g-3 needs-validation" novalidate>
-                        <div class="col-md-4 col-lg-6">
+                  <div class="col-lg-6 col-sm-12 ">
+                   <form class="mt-5">
+
+                        <div class="card p-3 mt-5 ">
+
+                              <div class="row">
+                              <div class="mb-3 col-lg-6">
                               <label for="validationCustom01" class="form-label ms-1">First Name</label>
                               <input type="text" class="form-control" id="contact-name" onkeyup="validateName()" />
                               <!-- <span class="col-lg-6 mx-auto" id="name-error"></span> -->
                               <div id="name-error"></div>
                         </div>
+
 
                         <div class="col-md-4 col-lg-6">
                               <label for="validationCustom02" class="form-label ms-1">Age</label>
@@ -103,7 +109,16 @@
                               <button type="button" class="btn btn-danger">Cancel</button>
                               <span id="submit-error"> </span>
                         </div>
+
                   </form>
+                  
+            </div>
+            
+      </div>
+      
+</div>
+
+                  
                   <!-- form -->
             </header>
 
